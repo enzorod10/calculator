@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'vt323regular';
+    src: url('fonts/vt323-regular-webfont.woff2') format('woff2'),
+         url('fonts/vt323-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    display: flex;
+    font-family:'vt323regular', serif;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./images/background.jpg);
+    background-size: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 6px solid rgba(141, 141, 141, 0.363);
+    width: 270px;
+    height: 485px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 10px;
+    gap: 8px;
+    box-shadow: 2px 1px 2px 1px rgba(36, 21, 21, 0.397);
+}
+
+.screen{
+    border: 1px rgb(0, 0, 0) solid;
+    height: 70px;
+    width: auto;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px rgba(173, 173, 173, 0.651) solid;
+    box-shadow: 3px 1px 3px rgb(0, 0, 0);
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.operations{
+    align-self: flex-end;
+    margin-right: 0px;
+    color: white;
+    word-spacing: 2px;
+    font-size: larger;
+    overflow: hidden;
+}
+
+.result{
+    position: absolute;
+    color: white;
+    font-size: larger;
+}
+
+.keyPad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+    gap: 5px;
+    height: 350px;
+    width: 300px;
+    border: 2px rgba(179, 179, 179, 0.651) solid;
+    box-shadow: 2px 2px 2px 3px rgb(41, 40, 40);
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.num0,
+.num1,
+.num2,
+.num3,
+.num4,
+.num5,
+.num6,
+.num7,
+.num8,
+.num9,
+.keyDot,
+.keyEquals,
+.keyAdd,
+.keySub,
+.keyDiv,
+.keyMult{
+    width: 50px;
+    height: 72px;
+    border: 1px rgba(129, 129, 128, 0.671) solid;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 450;
+    text-shadow: 1px 2px 1px rgba(75, 53, 20, 0.76);
+    box-shadow: 2px 2px 2px 0px rgba(248, 248, 248, 0.733);
+    transition: all 0.15s ease;
+}
+
+.clearButton{
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    box-shadow: 1px 1px 1px 1px rgba(248, 248, 248, 0.733);
+    transition: all 0.15s ease;
+}
+
+.num0:hover,
+.num1:hover,
+.num2:hover,
+.num3:hover,
+.num4:hover,
+.num5:hover,
+.num6:hover,
+.num7:hover,
+.num8:hover,
+.num9:hover,
+.keyDot:hover,
+.keyEquals:hover,
+.keyAdd:hover,
+.keySub:hover,
+.keyDiv:hover,
+.keyMult:hover{
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.733);
+    text-shadow: 0px 0px 0px rgba(75, 53, 20, 0.76);
+    font-size: 25px;
+    border: 1px rgba(255, 255, 255, 0.404) solid;
+}
+
+.clearButton:hover{
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.733);
+    text-shadow: 0px 0px 0px rgba(75, 53, 20, 0.76);
+    font-size: 25px;
+    border: 1px rgba(255, 255, 255, 0.404) solid;
+}
